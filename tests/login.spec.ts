@@ -17,7 +17,7 @@ test.describe('VERIFY LOGIN PAGE', () => {
         loginPage.goto();
         await expect(page.locator('div.container'))
         .toHaveText([
-            `LOGIN TO RURALNETUsernamePasswordYearForgot your password?Login`
+            "LOGIN TO RURALNETUsernamePasswordYearForgot your password?Login"
         ])
     })
 })
