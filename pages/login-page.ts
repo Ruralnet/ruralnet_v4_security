@@ -20,7 +20,7 @@ export class LoginPage {
     }
 
     async goto() {
-        await this.page.goto('/login');
+        await this.page.goto('http://172.30.1.224:8880');
     }
 
     async closeBanner() {
