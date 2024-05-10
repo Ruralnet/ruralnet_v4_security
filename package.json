@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "RuralNet v4 Automation for Security module",
   "main": "index.js",
+  "dependencies": {
+    "playwright": "^1.44.0",
+    "playwright-core": "^1.44.0",
+    "undici-types": "^5.26.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.11"
+  },
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.44.0",
-    "@types/node": "^20.12.10"
-  }
+  "license": "ISC"
 }
