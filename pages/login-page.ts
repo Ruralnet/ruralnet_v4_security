@@ -20,7 +20,7 @@ export class LoginPage {
     }
 
     async goto() {
-        await this.page.goto('/', { timeout: 60000 });
+        await this.page.goto('/login');
     }
 
     async closeBanner() {
