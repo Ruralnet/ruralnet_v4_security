@@ -21,12 +21,12 @@ class LoginPage {
     }
 
     async goto() {
-        await this.page.goto('http://172.30.1.224:8880/login');
+        await this.page.goto('http://192.168.254.154:8880/login');
     }
 
     async closeBanner() {
-        await this.closeBannerButton.click();
         await this.nextBannerButton.click();
+        await this.closeBannerButton.click();
     }
 
     async enterUsername(username: string) {

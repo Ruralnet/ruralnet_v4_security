@@ -28,7 +28,7 @@ class ForgotPasswordPage {
     }
 
     async verifyForgotPasswordPage(username) {
-        await expect(this.loginNameLabel).toHaveText(username)
+        await expect(this.loginNameLabel).toHaveValue(username)
     }
 
     async enterMothersMaidenName(mothersMaidenName) {
