@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test'
 
-export class LoginPage {
+class LoginPage {
     readonly page: Page;
     readonly loginToRnetLabel: Locator;
     readonly closeBannerButton: Locator;
@@ -8,6 +8,7 @@ export class LoginPage {
     readonly usernameField: Locator;
     readonly passwordField: Locator;
     readonly loginButton: Locator;
+    readonly forgotPasswordButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -16,6 +17,7 @@ export class LoginPage {
         this.usernameField = page.locator('input[name="username"]');
         this.passwordField = page.getByLabel("Password");
         this.loginButton = page.getByRole('button', { name: 'Login' });
+        this.forgotPasswordButton = page.getByRole('link', { name: 'Forgot your password?' });
     }
 
     async goto() {
@@ -46,5 +48,11 @@ export class LoginPage {
         this.enterUsername(username);
         this.enterPassword(password);
         this.clickLogin();
-    } 
+    }
+
+    async clickForgotPassword() {
+        this.forgotPasswordButton.click()
+    }
 }
+
+export default LoginPage;
