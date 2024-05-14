@@ -54,5 +54,3 @@ class LoginPage {
         this.forgotPasswordButton.click()
     }
 }
-
-export default LoginPage;
