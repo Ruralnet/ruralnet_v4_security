@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/login-page';
+import LoginPage from '../pages/login-page';
 
 const VALID_CREDENTIAL = {
     'USERNAME': 'qa_marvin',
